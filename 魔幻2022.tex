@@ -1,0 +1,243 @@
+ \documentclass[fontset=founder]{ctexbook}
+%\documentclass[fontset=founder]{elegantbook}
+
+    \author{佚名}
+    \title{魔幻2022}
+    \pagestyle{headings}
+%     \ctexset{section={
+%             name={第,节},
+%             number=\arabic{section}
+%         }
+%     }
+
+%% 画图
+%\usepackage{tikz}
+
+%% 设置页边距
+\usepackage[left=2.6cm, right=2.6cm]{geometry}
+
+%% 设置页眉页脚
+\usepackage{fancyhdr}
+\pagestyle{headings}
+\rhead{\chaptername \thesection - \thepage}
+\chead{\date}
+\rhead{\chaptername \thesection - \thepage}
+\lfoot{}
+\cfoot{plain}
+\rfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\headwidth}{\textwidth}
+\renewcommand{\footrulewidth}{0pt}
+
+% 使用超链接
+ \usepackage[
+     colorlinks=true,
+     linkcolor=red,
+     filecolor=red,      
+     urlcolor=blue,
+     citecolor=cyan]{hyperref}
+    
+%% 使用语法高亮
+\usepackage{listings}
+\usepackage{xcolor}
+% 定义可能使用到的颜色
+\definecolor{CPPLight}  {HTML} {686868}
+\definecolor{CPPSteel}  {HTML} {888888}
+\definecolor{CPPDark}   {HTML} {262626}
+\definecolor{CPPBlue}   {HTML} {4172A3}
+\definecolor{CPPGreen}  {HTML} {487818}
+\definecolor{CPPBrown}  {HTML} {A07040}
+\definecolor{CPPRed}    {HTML} {AD4D3A}
+\definecolor{CPPViolet} {HTML} {7040A0}
+\definecolor{CPPGray}  {HTML} {B8B8B8}
+\lstset{
+    columns=fixed,       
+    numbers=left,                                        % 在左侧显示行号
+    frame=none,                                          % 不显示背景边框
+    backgroundcolor=\color[RGB]{245,245,244},            % 设定背景颜色
+    keywordstyle=\color[RGB]{40,40,255},                 % 设定关键字颜色
+    numberstyle=\footnotesize\color{darkgray},           % 设定行号格式
+    commentstyle=\it\color[RGB]{0,96,96},                % 设置代码注释的格式
+    stringstyle=\rmfamily\slshape\color[RGB]{128,0,0},   % 设置字符串格式
+    showstringspaces=false,                              % 不显示字符串中的空格
+    language=c++,                                        % 设置语言
+    morekeywords={alignas,continute,friend,register,true,alignof,decltype,goto,
+    reinterpret_cast,try,asm,defult,if,return,typedef,auto,delete,inline,short,
+    typeid,bool,do,int,signed,typename,break,double,long,sizeof,union,case,
+    dynamic_cast,mutable,static,unsigned,catch,else,namespace,static_assert,using,
+    char,enum,new,static_cast,virtual,char16_t,char32_t,explict,noexcept,struct,
+    void,export,nullptr,switch,volatile,class,extern,operator,template,wchar_t,
+    const,false,private,this,while,constexpr,float,protected,thread_local,
+    const_cast,for,public,throw,std},
+    emph={map,set,multimap,multiset,unordered_map,unordered_set,
+    unordered_multiset,unordered_multimap,vector,string,list,deque,
+    array,stack,forwared_list,iostream,memory,shared_ptr,unique_ptr,
+    random,bitset,ostream,istream,cout,cin,endl,move,default_random_engine,
+    uniform_int_distribution,iterator,algorithm,functional,bing,numeric,},
+    emphstyle=\color{CPPViolet}, 
+}
+
+\begin{document}
+ 
+\maketitle% show title
+
+\tableofcontents
+
+
+\chapter*{序}
+一些博客文章
+
+%%%%%%%%%%%%%%%%
+\chapter{道德与法律}
+\section{携子跳楼}
+胡适有首小诗，不必是儿子
+
+%%%%%%%%%%%%%%%%
+\chapter{网络人物}
+
+\section{大力出奇迹}
+东北大力哥，喝止咳糖浆上瘾，劫持ATM机取款路人失败，被捕后跟记者胡言乱语，在电视台播出，B站名噪一时。
+
+\section{打工是不可打工能的}
+广西南宁周某，在偷电瓶被捕后，
+
+我们要悄悄的打工，然后惊艳所有人。
+
+没有困难的工作，只有勇敢的打工人。
+
+\section{法外狂徒张三}
+近两年，厚大法考的罗翔老师，在网络上比较火，人送外号“法外狂徒张三”。罗翔走红的原因，在于中国法制尚不健全。三四线城市，就业少，出路不多，普遍内卷，互相倾轧，零和游戏，办事需要托关系、走后门，看脸色，弱势市场主体无法参与公平竞争，权利寻租，导致社会资源利用效率不高。
+
+\section{雷电法王，杨永信}
+布鲁诺，被作为异端烧死。网瘾者，受到杨永信的电击治疗。
+
+想起《发条橙》中，犯罪分子被捕入狱后，接受“厌悲疗法”的条件反射治疗。厌悲疗法不仅剥夺了他向恶的自由意志，也剥夺了他自卫的本能，他成了“发条橙”，一个没有自由意志的机械装置。
+
+很多家长教育孩子时，都要想一下，自己认为的就一定是对的吗？权威是否是真的权威？爱因斯坦的相对论，对牛顿的经典力学，意味着什么？对与网络这种新事物，先进所有网民都沉迷的时候，那时的网瘾少年是否是在积极拥抱一个新时代呢？
+
+\section{三和大神}
+
+\section{消失的杀马特}
+也是一个纪录片，记录了杀马特贵族的历史。
+
+\section{闪电五连鞭}
+马保国，B站捧出的神人。群众的娱乐，就是这么低级，这么无味。
+
+
+\section{我的滑板鞋}
+约翰逊.庞麦郎
+
+\section{广州十年爱情故事 - 雨神}
+
+\section{好想长出叶绿体}
+\href{https://www.bilibili.com/video/av415856325/}{B站某UP民谣：好想长出叶绿体}。
+我多想像大树一样
+
+\section{郑钱花 - 川子}
+可是，我的宝贝你知道么？
+现在的钱有多么难挣啊？
+养一个孩子他妈不容易呀！
+计划生育还有必要吗？！
+伟大的祖国她超有钱啊！
+四万个亿跟我有蛋关系呢？
+骄傲的GDP它噌噌的涨啊！
+能给我换来几包尿不湿吗？！
+
+%%%%%%%%%%%%%%%%%%
+\chapter{民族与国家}
+
+\section{新文化运动未解决的问题}
+日军侵华战争，打断了新文化运动，国民在颠沛流离中，只能求生存，无力思建设。
+
+\section{民族国家}
+想象的共同体, 成为政治上的国家.
+黑人身强力壮, 但战争能力几乎为零, 现代社会战争已经是以武器装备为基础的组织能力比拼, 个体在战争中起得作用极小, 不会主要依靠个人英雄人物了
+\section{如何向日本学习}
+近代日本一直是东亚的优等生，很像不断吸收先进文明来完善自身的古罗马。日本又像大英帝国一样，发源于海岛一隅，侵略全亚洲。
+
+自二战胜利后国人可否有深刻反思，还是被狂热的历史仇恨蒙蔽了眼睛，以至于无法正视自己的缺点？
+\section{中美差距}
+
+\section{家庭暴力与中国女权}
+《家庭、私有制和国家的起源》
+
+\section{当种族歧视批上政治正确的外衣}
+“黑命贵”导致“零元购”，也不知黑命是否还贵。
+
+黑命贵，那是比亚裔来说，当然贵。虽然很多中国人移民美国硅谷，成功实现了“美国梦”，但他们做的大部分都是STEM相关工作，几乎没有体育、政治、艺术方面的上层精英人士，而所谓STEM，都是美国中产阶级不想做的无聊工作，所以丢给新兴国家里的优秀移民来做。当然能进入STEM行业工作，比这些新移民的母国来说，生活水平确实提升了。总体看，美国亚裔处于社会底层，比美国黑人还要底层。
+
+美国白人给亚裔贴上“模范少数族裔（Model Minority）”标签，等于捧杀。不切实际的恭维，而没有实在的利益，为了维持这个模范形象，亚裔不敢像黑人那样到处惹事争取权益，只能忍气吞声，蜷缩在中餐馆、洗衣店、美甲店、按摩店、蔬菜大棚、超市收银。
+
+比如，斯坦福的李飞飞教授，就是开洗衣店来补贴科研经费。
+
+又比如，有两个亚裔up主“双琴侠（TwoViolinSet）”，故意玩梗“Lingling”，意思是，亚裔（特指中国人细分）在小提琴领域取得成功，就是靠一天40小时的残酷训练，而同样成功情况在白人身上，就是自然而然，就是gift，天赋，是上天赐予的。这种行为，无非暗示说，中国人智商低，必须靠超强度的训练才能维持高水准表演。打个不太恰当的比喻，像是，已经被驯化了的奴隶，歧视未被驯化的奴隶？这种梗，是潜在的，很多人都把它当初一种恭维，其实质是一种隐含的贬低。
+
+所以很多白人喜欢不吝啬对移民的赞美，实际他们内心是很不在意这些移民的成功的，无论这些新移民付出多少努力，永远是you，而不是we。而第二代移民，很少能复制其父辈的成功，毕竟，第一代移民是其母国里最优秀的一部分群体，搬家穷三年，在新国家日子不会过太好，对下一代的支持相对不如在母国环境支持更多。
+
+亚裔作为美国的干儿子，温顺老实，处处受气；黑人作为美国的亲儿子，到处滋事，不好意思去打，处处维持政治正确。
+
+普通亚裔移民美国，不容易。如果是绝世美女，或青年身怀绝技，那么在美国还是过得很舒服的。
+
+\section{绝命毒师老白的悲哀}
+老白的悲哀在与没人理解他，别人都把他当loser。
+老白这种典型理工宅男身上，好像看到，冉阿让的影子。
+老白结局与毒贩同归于尽，结束了这个罪恶的世界，也算一种救赎吧。
+大家喜欢这部剧，恐怕都看到了自己面对生活无奈时，还对自己有所期望。
+
+\section{中国人以“吃货”为荣？}
+这是由于中国社会不够多元造成的，从温饱水平出来的人们，还停滞在80年代物资匮乏的旧思维里，以吃为乐，以吃为荣。
+
+西方国家，各种运动、歌剧、音乐、绘画、社区义工，社会生活非常多元，社会贫富差距比较小，人们有更多闲暇，关注自身生活，而不是靠短平快的猛吃获得存在感。
+
+另外，某些中国饭菜，味道确实也不错。但是中餐有个致命缺点，无法标准化、国际化。那些饭菜在中国还行，到了国际上，除了价格优势，毫无竞争力。
+
+川菜开遍全国，说到底还是西南人口向北上广一线城市。这种廉价的红油火锅，以低成本优势，重口味掩盖了食材的不佳，扩散到全国。
+
+\section{怎么吃火锅？}
+为什么有些火锅帖子总有四川人说蘸麻酱是异端？ - 屁师的回答 - 知乎
+
+https://www.zhihu.com/question/34590519/answer/1288712298
+
+\section{迷失的苏联}
+
+\section{《饥饿的盛世》}
+张宏杰写了《饥饿的盛世》。
+
+“盛世无饥馁，何须耕织忙”，红楼梦里，这句话格外刺耳，出自林黛玉的《杏帘在望》。大观园虽好，刘姥姥实则饥饿不堪。只有曹雪芹这种，从统治集团巅峰迅速跌落的公子哥，才能认识到封建社会，剥削底层劳动人民的残酷。
+
+
+\section{望谁成龙？}
+望子成龙还是望父成龙？
+
+一直认为需要英雄的国家是悲哀的民族。需要龙的家庭，是无聊乃至失败的家庭。家族的兴衰，在于每个人都努力一点，所谓日拱一卒，功不唐捐。而不是靠救世主，靠英雄人物拯救自己。
+
+真正的强者，身体力行，谁也不指望谁。
+
+
+\chapter{教育}
+
+\section{教什么}
+\section{怎么教}
+\section{如何解决钱学森之问}
+根本上还是人均GDP不高，教育部门作为成本消耗方，对拉动GDP无法立竿见影。
+
+美国有无数优秀高校，中国才34所211/985大学，即便新推出双一流计划，仍然是换汤不换药，旧酒装新瓶，存量博弈，而且落后高校几乎无法实现反超。
+
+\section{为什么贫穷纪录片：教育出路}
+这是一款纪录片的标题，记录了中国农村孩子的高考之路。
+
+片中，看到女孩的母亲没了一只手，还在努力地搬砖。
+
+\section{衡水中学后遗症}
+衡水中学，挑战北方一切县级中学。
+
+这是一个不需要超级中学的时代。衡水中学，河北教育的伤疤、畸形、怪胎、毒瘤、精华。
+
+衡水中学，永远滴神。
+
+\section{大山里的女校校长，张桂梅}
+希望这个时代，不再出现英雄，不再存在模范，不再有最美的某某某，希望我们平庸就幸福，希望人生不必波澜壮阔，我只想做个快乐的废宅，每天上班摸鱼，下班打游戏。
+
+职业教育孱弱，得不到认同，所以张桂梅只能组建普通高中。
+ 
+\end{document}
